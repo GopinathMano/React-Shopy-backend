@@ -28,7 +28,7 @@ app.use("/api/orders", orderRouter);
 // paypal 
 
 app.get('/api/config/paypal', (req, res) => {
-  res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
+  res.send(process.env.PAYPAL_CLIENT_ID );
 });
 
 // server Running notification
